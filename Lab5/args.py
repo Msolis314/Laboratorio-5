@@ -3,6 +3,7 @@ from abstractclass import Pil
 from abstractclass import OpenCv
 
 class PersonalisedExcep(Exception):
+    """ Clase para crear un excepcion particular"""
     def __init__(self, mensaje):
         self.mensaje = mensaje
         super().__init__(self.mensaje)
@@ -22,7 +23,7 @@ def main():
     try:
         # Interfaz del programa
         args = parse_arguments()
-
+        """Aqui se crean los objetos de las respectivas bibliotecas"""
         if args.biblioteca == 'PIL':
             ima_ob = Pil(args.imagen)
         elif args.biblioteca == "OpenCV":
