@@ -14,4 +14,4 @@ Se requiere de los archivos `abstractclass.py` y `args.py` para el funcionamient
 
 El programa se ejecuta de la siguiente forma:
 
-`>> args.py --biblioteca <PIL | OpenCV> --image <path_a_la_imagen>`
+`>> python3 args.py --biblioteca <PIL | OpenCV> --image <path_a_la_imagen>`
