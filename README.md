@@ -9,6 +9,8 @@ Se utilizan las siguientes bibliotecas:
 * La biblioteca `OpenCV` (`cv2`): Proporciona métodos alternativos para leer (`imread()`) y mostrar (`imshow()`) una imagen.
 
 Estas se importan en el archivo `abstractclass.py`. A su vez, el archivo `args.py` importa los módulos `Pil` y `OpenCv` de `abstractclass`.
+
+Las excepciones se manejan por medio de `FileNotFoundError` para el caso de que el path proporcionado no exista. Además, se manejan por medio de la clase `PersonalisedExcep` en caso de que la biblioteca especificada no sea una opción válida (PIL u OpenCV). También, se incluye una excepción para imprimir un mensaje de error si se presenta un fallo en procesamiento de la imagen.
 ## Uso del programa
 Se requiere de los archivos `abstractclass.py` y `args.py` para el funcionamiento.
 
